@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>AI Mood Tracker</h2>
+
+<form method="POST">
+<textarea name="journal" rows="5" cols="50" placeholder="How do you feel today?" required></textarea><br><br>
+<button type="submit">Analyze</button>
+</form>
+
+{% if mood %}
+<h3>Mood: {{ mood }}</h3>
+<p>Suggestion: {{ suggestion }}</p>
+{% endif %}
+
+</body>
+</html>
